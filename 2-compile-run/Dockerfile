@@ -1,0 +1,13 @@
+# Use the official OpenJDK base image
+FROM openjdk:17
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the compiled Java application into the container
+COPY HelloWorld.java /app
+
+RUN javac /app/HelloWorld.java
+
+# Run the Java application when the container starts
+CMD ["java", "HelloWorld"]
