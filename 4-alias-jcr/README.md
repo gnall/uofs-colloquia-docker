@@ -7,7 +7,7 @@ docker build -t alias-jcr .
 ```
 
 ```
-docker run --rm -v "$(pwd)":/app/src alias-jcr HelloWorld.java
+docker run --rm -v $(pwd):/app/src alias-jcr HelloWorld.java
 ```
 
 
@@ -18,7 +18,7 @@ Execute the following command;
 echo $0
 ```
 
-**If the result is `bash`**
+**If the result is `bin/bash`**
 
 Execute the following commands:
 ```
@@ -38,6 +38,11 @@ alias_name="jcr"
 command='docker run --rm -v $(pwd):/app/src share-run $@'
 echo "alias ${alias_name}='${command}'" >> ~/.zshrc
 source ~/.zshrc
+```
+
+Now you can run
+```
+jcr HelloWorld.java
 ```
 
 ---

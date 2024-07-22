@@ -6,5 +6,5 @@ docker build -t share-run .
 ```
 
 ```
-docker run --rm -v "$(pwd)":/app/src share-run HelloWorld.java
+docker run --rm -v $(pwd):/app/src share-run HelloWorld.java
 ```

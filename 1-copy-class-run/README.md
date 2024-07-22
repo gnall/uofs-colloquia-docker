@@ -1,7 +1,7 @@
 # Instructions
 Execute the following commands in order
 ``` 
-javac Hellworld.java 
+javac HelloWorld.java 
 ```
 
 ```
