@@ -1,5 +1,5 @@
-# Dockerfile
-FROM openjdk:latest
+# https://hub.docker.com/_/amazoncorretto
+FROM docker.io/amazoncorretto:17
 
 # Set the working directory inside the container
 WORKDIR /app
